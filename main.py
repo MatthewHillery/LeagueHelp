@@ -25,8 +25,8 @@ def constructUrls():
         champion2 = str(sys.argv[3]).lower()
 
         if champion2 in champion_list:
-            url_list.append(counter_vs_url.replace("champ1", champion1))
-            url_list.append(counter_vs_url.replace("champ2", champion2))
+            counter_vs_url_new = counter_vs_url.replace("champ1", champion1)
+            url_list.append(counter_vs_url_new.replace("champ2", champion2))
             url_list.append(counter_url.replace("champ1", champion2))
         else:
             print("Cannot find champ -> " + champion2)
